@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text"  id="Nhapvao"/>
+<button  onclick="a()"/>Tính số ngày
+<h1 id="result"></h1>
+<script>
+        function a() {
+            let thangDauVao=+document.getElementById('Nhapvao');
+            let soNgay='';
+        switch (thangDauVao) {
+            case 2:
+                soNgay='28 hoặc 29 ngày';
+                break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    soNgay='30 ngày';
+                    break;
+                default:
+                    soNgay='31 ngày';
+                    break;
+        }
+            document.getElementById('result').innerHTML = soNgay;
+    }
+
+</script>
+</body>
+</html>
